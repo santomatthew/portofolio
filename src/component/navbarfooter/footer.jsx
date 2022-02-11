@@ -1,9 +1,18 @@
 import React from "react";
 
+
+import {Row,Col, Container} from "react-bootstrap"
+
 const Footer = () =>{
     return(
     <>
-    <h1>Ini adalah footer</h1>
+    <Container>
+        <Row>
+            <Col style={{backgroundColor:'pink'}} lg="12">
+            Copyright © 2022 || Santo Matthew
+            </Col>
+        </Row>
+    </Container>
     </>
     
     )    

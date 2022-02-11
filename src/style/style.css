@@ -1,0 +1,25 @@
+.navbarcolor{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #CCD1E4;
+    border-radius: 5px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.pictsizer{
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.formatter{
+    margin-top: 100px;
+}
+
+.intro{
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');

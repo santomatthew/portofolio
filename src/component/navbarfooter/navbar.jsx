@@ -1,26 +1,34 @@
 import React from "react";
 
-import {Container,Nav,Navbar,NavDropdown,Form,FormControl,Button} from "react-bootstrap"
+import "../../style/style.css"
+
+import {Container,Nav,Navbar,Row,Col} from "react-bootstrap"
 
 const Header = () =>{
     return(
     <>
-            <Navbar bg="light" expand="lg">
+        <Container className="navbarcolor">
+            <Navbar expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                <Row>
+                    <Col lg="3">
+                        <Navbar.Brand style={{fontSize:'35px'}} href="#">Welcome</Navbar.Brand>
+                    </Col>
+                </Row>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
-                <Nav
-                    className="me-auto my-2 my-lg-0"
-                    style={{ maxHeight: '100px' }}
-                    navbarScroll    
-                >
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">Link</Nav.Link>
-                </Nav>
+                        <Nav
+                            className="me-auto my-2 my-lg-0 "
+                            style={{ maxHeight: '100px',fontSize:'20px' }}
+                            navbarScroll
+                        >
+                            <Nav.Link href="#action1">About Me</Nav.Link>
+                            <Nav.Link href="#action2">Projects</Nav.Link>
+                        </Nav>
                 </Navbar.Collapse>
             </Container>
-        </Navbar>
+            </Navbar>
+            </Container>
     </>
     
     )    
